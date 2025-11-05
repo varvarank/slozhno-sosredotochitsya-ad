@@ -173,6 +173,10 @@
   font-weight: var(--heading-font-weight); 
 }
 
+.section-how .article:first-child .article__title:first-child {
+  margin-bottom: 20px;
+}
+
 .article__link {
   text-shadow: 2px 2px 0 var(--link-shadow-color);
   text-decoration: none;
@@ -258,10 +262,6 @@
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
-
-  .bottom {
-    margin-bottom: 10px;
-  }
   
   .gallery__list {
     grid-template-columns: repeat(3, 1fr);
@@ -289,7 +289,6 @@
   }
 }
 
-/* Адаптив для десктопов */
 @media (width >= 1024px) {
   .header__theme-menu {
     justify-self: center;

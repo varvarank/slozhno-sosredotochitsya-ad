@@ -1,7 +1,7 @@
 :root.theme-light {
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
-  --title-shadow-color: #ff0070;
+  --title-shadow-color: #ff8dcb;
   --text-color: #353430;
   --bg-color: #fff1f7;
   --section-title-color: #353430;
@@ -20,7 +20,7 @@
   :root {
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
-    --title-shadow-color: #ff0070;
+    --title-shadow-color: #ff8dcb;
     --text-color: #353430;
     --bg-color: #fff1f7;
     --section-title-color: #353430;
