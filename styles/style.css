@@ -87,6 +87,7 @@
   line-height: 1;
   text-transform: lowercase;
   cursor: pointer;
+  color: var(--decorated-zone-color);
 }
 
 .header__theme-menu-button:hover {
@@ -154,11 +155,22 @@
   font-size: inherit;
   color: var(--article-title-color);
   background-color: var(--accent-color);
-  font-weight: var(--heading-font-weight);
 }
 
 .article__text {
   line-height: 1.3;
+}
+
+.article__title.title-decor {
+  font-weight: var(--heading-font-weight); 
+}
+
+.section-how .article__title.title-decor {
+  font-weight: var(--base-font-weight); 
+}
+
+.section-how .article:first-child .article__title:first-child {
+  font-weight: var(--heading-font-weight); 
 }
 
 .article__link {
@@ -191,7 +203,6 @@
   block-size: 100%;
 }
 
-/* Подвал */
 .footer {
   display: grid;
   place-items: center;
@@ -248,12 +259,8 @@
     gap: 20px;
   }
 
-  .regular-title {
-    font-weight: var(--base-font-weight);
-  }
-
   .bottom {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .gallery__list {
