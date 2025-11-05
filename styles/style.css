@@ -11,7 +11,9 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: var(--section-gap);
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
 }
 
 /* Декоративные элементы */
@@ -47,6 +49,7 @@
   inset-inline-end: calc(var(--section-gap) + 9px);
   inset-block-start: var(--section-gap);
   color: var(--accent-color);
+  font-size: var(--base-font-size);
   line-height: 1.38;
   display: flex;
   align-items: center;
@@ -80,7 +83,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -120,7 +123,7 @@
 .header__text {
   align-self: center;
   justify-self: end;
-  inline-size: min(364px, 100%);
+  inline-size: min(355px, 100%);
 }
 
 /* Основной контент */
@@ -128,7 +131,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-block: 40px;
+  padding: 40px var(--section-gap);
 }
 
 .section {
@@ -232,6 +235,7 @@
   
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: -20px;
   }
   
   .header__text {
@@ -240,11 +244,12 @@
   
   .main {
     gap: 80px;
-    margin-block: 60px;
+    padding: 60px var(--section-gap);
   }
   
   .section-why {
     grid-template-columns: 1fr 2fr;
+    gap: 20px;
   }
   
   .section-what .section__title {
@@ -253,8 +258,13 @@
   
   .section-how {
     grid-template-columns: 1fr 2fr;
+    gap: 20px;
   }
-  
+
+  .regular-title {
+    font-weight: var(--base-font-weight); 
+  }
+    
   .gallery__list {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
