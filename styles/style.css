@@ -87,7 +87,7 @@
   line-height: 1;
   text-transform: lowercase;
   cursor: pointer;
-  color: var(--decorated-zone-color);
+  color: var(--button-color);
 }
 
 .header__theme-menu-button:hover {
@@ -119,6 +119,7 @@
   align-self: center;
   justify-self: end;
   inline-size: min(355px, 100%);
+  font-weight: var(--heading-font-weight);
 }
 
 .main {
@@ -155,25 +156,20 @@
   font-size: inherit;
   color: var(--article-title-color);
   background-color: var(--accent-color);
+  font-weight: var(--heading-font-weight);
 }
 
 .article__text {
   line-height: 1.3;
 }
 
-.article__title.title-decor {
-  font-weight: var(--heading-font-weight); 
-}
-
-.section-how .article__title.title-decor {
-  font-weight: var(--base-font-weight); 
+/* Исправляем начертание для секции how */
+.section-how .article__title {
+  font-weight: var(--base-font-weight);
 }
 
 .section-how .article:first-child .article__title:first-child {
-  font-weight: var(--heading-font-weight); 
-}
-
-.section-how .article:first-child .article__title:first-child {
+  font-weight: var(--heading-font-weight);
   margin-bottom: 20px;
 }
 
@@ -194,9 +190,13 @@
   outline: 1px solid currentColor;
 }
 
+.gallery {
+  gap: var(--section-gap);
+}
+
 .gallery__list {
   display: grid;
-  gap: 10px;
+  gap: var(--section-gap);
 }
 
 .gallery__image {
@@ -229,6 +229,10 @@
   font-weight: var(--heading-font-weight);
 }
 
+/* Убираем дублирующиеся стили */
+.article__title.title-decor {
+  font-weight: var(--heading-font-weight);
+}
 
 @media (width >= 768px) {
   .page {
@@ -251,7 +255,6 @@
   
   .section-why {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
   
   .section-what .section__title {
@@ -260,7 +263,6 @@
   
   .section-how {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
   
   .gallery__list {
@@ -306,7 +308,6 @@
   .section-what .article-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
   
   .section-what .section__title {
