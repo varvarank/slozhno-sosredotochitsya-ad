@@ -1,7 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   font-family: var(--main-font);
   font-size: var(--base-font-size);
   line-height: 1.3;
@@ -16,7 +13,6 @@
   margin: 0 auto;
 }
 
-/* Декоративные элементы */
 .decorated-zone {
   position: relative;
 }
@@ -43,7 +39,6 @@
   inset-block-end: var(--section-gap);
 }
 
-/* Элемент REC */
 .rec-decoration {
   position: absolute;
   inset-inline-end: calc(var(--section-gap) + 9px);
@@ -66,7 +61,6 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
-/* Шапка */
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -126,7 +120,6 @@
   inline-size: min(355px, 100%);
 }
 
-/* Основной контент */
 .main {
   display: flex;
   flex-direction: column;
@@ -185,11 +178,6 @@
   outline: 1px solid currentColor;
 }
 
-/* Галерея */
-.gallery {
-  gap: 10px;
-}
-
 .gallery__list {
   display: grid;
   gap: 10px;
@@ -220,14 +208,13 @@
   font-weight: var(--heading-font-weight);
 }
 
-/* Общий класс для элементов с цветным фоном */
 .title-decor {
   color: var(--article-title-color);
   background-color: var(--accent-color);
   font-weight: var(--heading-font-weight);
 }
 
-/* Адаптив для планшетов */
+
 @media (width >= 768px) {
   .page {
     --section-gap: 20px;
@@ -262,9 +249,13 @@
   }
 
   .regular-title {
-    font-weight: var(--base-font-weight); 
+    font-weight: var(--base-font-weight);
   }
-    
+
+  .bottom {
+    margin-bottom: 20px;
+  }
+  
   .gallery__list {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;

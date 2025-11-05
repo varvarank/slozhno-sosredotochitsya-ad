@@ -1,16 +1,9 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
-  /* Шрифты */
   --main-font: 'IBM Plex mono', monospace;
   --base-font-size: 18px;
   --base-font-weight: 400;
   --heading-font-weight: 700;
 
-  /* Цвета для тёмной темы (основная) */
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --title-shadow-color: #ff0070;
@@ -22,9 +15,7 @@
   --link-shadow-color: #ff0070;
   --button-hover-color: rgba(255, 0, 112, 0.4);
 
-  /* Фоны */
   --bg-image: url(../images/cover-image-dark.png);
 
-  /* Отступы */
   --section-gap: 10px;
 }
