@@ -2,3 +2,30 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Шрифты */
+  --main-font: 'IBM Plex mono', monospace;
+  --base-font-size: 18px;
+  --base-font-weight: 400;
+  --heading-font-weight: 700;
+
+  /* Цвета для тёмной темы (основная) */
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
+  --text-color: #f1b2ce;
+  --bg-color: #000028;
+  --section-title-color: #ff0070;
+  --article-title-color: #000028;
+  --decorated-zone-color: #ff0070;
+  --link-shadow-color: #ff0070;
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+
+  /* Фоны */
+  --bg-image: url(../images/cover-image-dark.png);
+
+  /* Отступы */
+  --section-gap: 10px;
+  --block-gap: 10px;
+}
